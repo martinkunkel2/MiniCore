@@ -91,6 +91,8 @@ class Print
 
     int16_t printf(const char *format, ...) __attribute__ ((format (printf, 2, 3)));
     int16_t printf(const __FlashStringHelper *format, ...);
+
+	int16_t vprintf(const char *format, va_list arg);
 };
 
 #endif
